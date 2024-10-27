@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner.ui;
+package com.alphadraxonis.notificationfilterandcleaner.ui;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -32,6 +32,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,10 +41,10 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.alphadraxonis.notificationcleaner.MainActivity;
-import com.alphadraxonis.notificationcleaner.R;
-import com.alphadraxonis.notificationcleaner.filters.DefaultFilterRule;
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.MainActivity;
+import com.alphadraxonis.notificationfilterandcleaner.R;
+import com.alphadraxonis.notificationfilterandcleaner.filters.DefaultFilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
 
 public class FilterUiList extends RecyclerView.Adapter<FilterUiList.Holder> {
 
@@ -123,9 +124,21 @@ public class FilterUiList extends RecyclerView.Adapter<FilterUiList.Holder> {
                 appIcon.setImageDrawable(packageManager.getApplicationIcon(appInfo));
                 appLabel.setText(packageManager.getApplicationLabel(appInfo));
             } catch (PackageManager.NameNotFoundException ex) {
-//                appIcon.setImageDrawable(AppCompatResources.getDrawable(mainActivity, R.drawable.warning_30));
+
                 appIcon.setImageDrawable(null);
                 appLabel.setText(filterRule.targetAppPackage);
+//                boolean appFound = false;
+//                for (ApplicationInfo app : packageManager.getInstalledApplications(0)) {
+//                    if (filterRule.targetAppPackage.equals(app.packageName)) {
+//                        appIcon.setImageDrawable(null);
+//                        appFound = true;
+//                        break;
+//                    }
+//                }
+//
+//                if (!appFound)
+//                    appIcon.setImageDrawable(AppCompatResources.getDrawable(mainActivity, R.drawable.warning_30));
+
             }
 
             String mode = filterRule.mode.displayName + " ";

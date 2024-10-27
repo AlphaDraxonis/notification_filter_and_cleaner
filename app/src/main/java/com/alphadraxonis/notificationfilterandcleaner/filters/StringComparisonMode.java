@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner.filters;
+package com.alphadraxonis.notificationfilterandcleaner.filters;
 
 public enum StringComparisonMode {
 

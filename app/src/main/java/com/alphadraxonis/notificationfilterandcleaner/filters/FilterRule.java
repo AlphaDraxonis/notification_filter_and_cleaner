@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner.filters;
+package com.alphadraxonis.notificationfilterandcleaner.filters;
 
 import android.os.Bundle;
 import android.service.notification.StatusBarNotification;

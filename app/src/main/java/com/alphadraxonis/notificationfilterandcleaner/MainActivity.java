@@ -16,16 +16,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner;
+package com.alphadraxonis.notificationfilterandcleaner;
 
 import android.animation.ValueAnimator;
 import android.app.AlertDialog;
-import android.content.ComponentName;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.service.notification.NotificationListenerService;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
@@ -43,10 +38,10 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Set;
 
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
-import com.alphadraxonis.notificationcleaner.ui.DeleteFilterDialog;
-import com.alphadraxonis.notificationcleaner.ui.EditFilterDialog;
-import com.alphadraxonis.notificationcleaner.ui.FilterUiList;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.ui.DeleteFilterDialog;
+import com.alphadraxonis.notificationfilterandcleaner.ui.EditFilterDialog;
+import com.alphadraxonis.notificationfilterandcleaner.ui.FilterUiList;
 
 public class MainActivity extends AppCompatActivity {
 

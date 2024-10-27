@@ -16,16 +16,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner.ui;
+package com.alphadraxonis.notificationfilterandcleaner.ui;
 
 import android.app.AlertDialog;
 import android.os.Handler;
 
 import java.util.Set;
 
-import com.alphadraxonis.notificationcleaner.MainActivity;
-import com.alphadraxonis.notificationcleaner.R;
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.MainActivity;
+import com.alphadraxonis.notificationfilterandcleaner.R;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
 
 public class DeleteFilterDialog {
     private MainActivity context;

@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner;
+package com.alphadraxonis.notificationfilterandcleaner;
 
 import android.app.Notification;
 import android.content.Context;
@@ -30,7 +30,7 @@ import androidx.core.app.NotificationManagerCompat;
 
 import java.util.Set;
 
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
 
 public class NotificationService extends NotificationListenerService {
 
@@ -56,11 +56,6 @@ public class NotificationService extends NotificationListenerService {
         if (needsReload) {
             filterRules = FileUtils.loadFilterRules(this);
             needsReload = false;
-        }
-
-        if (statusBarNotification.getPackageName().equals("com.supercell.clashofclans")
-                && statusBarNotification.getNotification().extras.getString(Notification.EXTRA_TEXT).startsWith("Your Village is being raided")) {
-            new Handler().postDelayed(() -> cancelNotification(statusBarNotification.getKey()), 10);
         }
 
         for (FilterRule filterRule : filterRules) {

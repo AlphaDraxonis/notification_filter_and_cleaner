@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner;
+package com.alphadraxonis.notificationfilterandcleaner;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -30,9 +30,9 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.alphadraxonis.notificationcleaner.filters.DefaultFilterRule;
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
-import com.alphadraxonis.notificationcleaner.filters.StringComparisonMode;
+import com.alphadraxonis.notificationfilterandcleaner.filters.DefaultFilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.filters.StringComparisonMode;
 
 public final class FileUtils {
 

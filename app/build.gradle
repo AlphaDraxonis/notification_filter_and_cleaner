@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.alphadraxonis.notificationcleaner'
+    namespace 'com.alphadraxonis.notificationfilterandcleaner'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.alphadraxonis.notificationcleaner"
+        applicationId "com.alphadraxonis.notificationfilterandcleaner"
         minSdk 24
         targetSdk 33
         versionCode 1

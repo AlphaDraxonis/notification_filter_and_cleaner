@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
-package com.alphadraxonis.notificationcleaner.ui;
+package com.alphadraxonis.notificationfilterandcleaner.ui;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -29,9 +29,9 @@ import androidx.appcompat.app.AlertDialog;
 
 import java.util.function.Consumer;
 
-import com.alphadraxonis.notificationcleaner.R;
-import com.alphadraxonis.notificationcleaner.filters.DefaultFilterRule;
-import com.alphadraxonis.notificationcleaner.filters.FilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.R;
+import com.alphadraxonis.notificationfilterandcleaner.filters.DefaultFilterRule;
+import com.alphadraxonis.notificationfilterandcleaner.filters.FilterRule;
 
 public final class EditFilterDialog {
 
