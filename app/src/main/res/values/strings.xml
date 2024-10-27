@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Notification Cleaner</string>
+
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="no_filters">No filters available!\nClose and reopen the app to add an example filter!</string>
+    <string name="press_back_again">Press again to quit</string>
+    <string name="delete_msg">Are you sure you really want to permanently delete the selected filters?</string>
+    <string name="enter_package_name_hint">com.supercell.clashofclans</string>
+    <string name="enter_query_hint">Your Village is being raided</string>
+
+</resources>
