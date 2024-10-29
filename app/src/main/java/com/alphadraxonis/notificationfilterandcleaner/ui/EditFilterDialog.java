@@ -1,6 +1,6 @@
 /*
- * Notification Filter
- * Copyright (C) 2024-2024 AlphaDraxonis
+ * Notification Filter and Cleaner
+ * Copyright (C) 2024 AlphaDraxonis
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
